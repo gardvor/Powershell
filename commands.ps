@@ -1,0 +1,2 @@
+# Список компьютеров в OU
+Get-ADComputer -Filter * -SearchBase 'OU=Updaters_WO,DC=* DC=*' | Select DNSHostName
