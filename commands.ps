@@ -1,2 +1,4 @@
 # Список компьютеров в OU
 Get-ADComputer -Filter * -SearchBase 'OU=Updaters_WO,DC=* DC=*' | Select DNSHostName
+
+D:\PsExec.exe @D:\Comps.txt net localgroup "Пользователи удаленного рабочего стола"
